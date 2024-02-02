@@ -1,17 +1,29 @@
-
-
-<div class="container">
+<div
+  class="container-fluid border py-5 d-flex flex-column"
+  style="height: 300px"
+>
   <div class="row text-center">
-      <h2>Bakir Bukvic</h2>
+    <div class="col">
+      <h3 class="fw-normal">Bakir Bukvic</h3>
+    </div>
   </div>
   <div class="row text-center">
-    <h3>Junior nesto</h3>
+    <div class="col">
+      <h4 class="fw-normal">Junior dev</h4>
+    </div>
   </div>
-  <div class="row mt-5">
-    <app-lower-header></app-lower-header>
+
+  <div class="row justify-content-end align-items-end mt-auto">
+    <div class="col-auto"><a target="_blank" [href]="linkedinLink" matTooltip="Visit"><img [src]="linkedinImage" style="height:40px; width: 40px;" ></a></div>
+    <div class="col-auto">
+      <a href="" (click)="copyNumber" matTooltip="Clipboard"><img [src]="phoneNumberImage" style="height:40px; width: 40px;"></a>
+
+    </div>
+
+    <div class="col-auto">
+      <a href="" (click)="copyEmail()" matTooltip="Clipboard"> <img [src]="emailImage "style="height:40px; width: 40px;" alt=""></a>
+
+    </div>
+
 
   </div>
-</div>
-
-
-
