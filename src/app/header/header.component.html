@@ -1,29 +1,22 @@
-<div
-  class="container-fluid border py-5 d-flex flex-column"
-  style="height: 300px"
->
-  <div class="row text-center">
-    <div class="col">
-      <h3 class="fw-normal">Bakir Bukvic</h3>
-    </div>
-  </div>
-  <div class="row text-center">
-    <div class="col">
-      <h4 class="fw-normal">Junior dev</h4>
-    </div>
-  </div>
 
-  <div class="row justify-content-end align-items-end mt-auto">
-    <div class="col-auto"><a target="_blank" [href]="linkedinLink" matTooltip="Visit"><img [src]="linkedinImage" style="height:40px; width: 40px;" ></a></div>
-    <div class="col-auto">
-      <a href="" (click)="copyNumber" matTooltip="Clipboard"><img [src]="phoneNumberImage" style="height:40px; width: 40px;"></a>
 
-    </div>
 
-    <div class="col-auto">
-      <a href="" (click)="copyEmail()" matTooltip="Clipboard"> <img [src]="emailImage "style="height:40px; width: 40px;" alt=""></a>
+
+
+  <div class="container-fluid py-2 d-flex flex-column" style="height: 300px; border-bottom: 1px solid #e0e0e0; background-color: black;">
+
+    <div class="row">
+      <div class="col d-flex">
+        <app-lower-header></app-lower-header>
+      </div>
+
+      <div class="col col-xs-12 py-4" style="color: white;">
+        <h1 class="py-4" style="font-size:40px;">Bakir Bukvic</h1>
+        <div class="col col-xs-12" style="margin-left: 25px; color:#006400">
+          <a  style="text-decoration: none;"href="https://github.com/B4akir"><p>https://github.com/B4akir</p></a>
+        </div>
+      </div>
 
     </div>
-
 
   </div>
