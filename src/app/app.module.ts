@@ -11,14 +11,16 @@ import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 
 
 const  routes: Routes = [
 
   {path:'', component: HomeComponent},
+  {path:'home', component: HomeComponent},
   {path:'projects', component: ProjectsComponent},
-
+  {path:'experience', component: ExperienceComponent},
 
 ];
 
@@ -31,7 +33,8 @@ const  routes: Routes = [
     LowerHeaderComponent,
     PagesComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
