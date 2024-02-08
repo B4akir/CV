@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { EducationComponent } from './pages/education/education.component';
 
 
 
@@ -21,6 +22,7 @@ const  routes: Routes = [
   {path:'home', component: HomeComponent},
   {path:'projects', component: ProjectsComponent},
   {path:'experience', component: ExperienceComponent},
+  {path:'education', component: EducationComponent},
 
 ];
 
@@ -34,7 +36,8 @@ const  routes: Routes = [
     PagesComponent,
     HomeComponent,
     ProjectsComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    EducationComponent
   ],
   imports: [
     BrowserModule,

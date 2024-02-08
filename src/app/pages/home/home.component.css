@@ -1,6 +1,18 @@
 
 h1{
 
-  color:#7F5283
+  color:#7F5283;
+  font-size:30px
+}
 
+
+p{
+
+  font-size:18px
+
+
+}
+
+li{
+  font-size:18px
 }
