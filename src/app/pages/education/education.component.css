@@ -1,0 +1,43 @@
+.container-fluid {
+  background-color: #f8f9fa;
+  padding: 30px;
+}
+
+h1 {
+  color: #343a40;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #6c757d;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #343a40;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  color: #6c757d;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #495057;
+  font-size: 1em;
+  line-height: 1.5;
+}

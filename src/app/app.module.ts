@@ -13,6 +13,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { EducationComponent } from './pages/education/education.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -37,7 +38,8 @@ const  routes: Routes = [
     HomeComponent,
     ProjectsComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
