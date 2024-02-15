@@ -10,6 +10,7 @@ export class EducationComponent {
 
   constructor(private route: Router) { }
 
+  currentFilter: string='';
 
   gotoProjects(){
 
@@ -18,6 +19,11 @@ export class EducationComponent {
 
   }
 
+  filter(clicked: string){
+    this.currentFilter=clicked;
+
+
+  }
 
 
 }

@@ -1,6 +1,20 @@
 <div class="container-fluid py-5">
   <div class="row">
     <div class="col">
+      <!-- Add the navigation bar here -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link btn btn-outline-primary mr-2" type="button" (click)="filter('data')">Data</a>
+          <a class="nav-item nav-link btn btn-outline-primary mr-2" type="button" (click)="filter('frontend')">Frontend</a>
+          <a class="nav-item nav-link btn btn-outline-primary mr-2" type="button" (click)="filter('salesforce')">Salesforce</a>
+          <a class="nav-item nav-link btn btn-outline-primary mr-2" type="button" (click)="filter('')">No filter</a>
+        </div>
+      </nav>
+
+
+<div class="container-fluid py-5">
+  <div class="row">
+    <div class="col">
       <h1 class="text-center mb-5">Education</h1>
     </div>
   </div>
@@ -11,7 +25,9 @@
       <!-- Education 1 -->
       <div class="card mb-4 shadow">
         <div class="card-body">
+
           <h5 class="card-title mb-3">Highschool</h5>
+          <img src="assets/gimnazija.jpg" class="py-2" style="width: 70px;">
           <h6 class="card-subtitle mb-2 text-muted">Gimnazija "Dr. Mustafa Kamaric" IT</h6>
           <p class="card-text">IT</p>
           <h4>What i learned</h4>
@@ -51,6 +67,7 @@
         <div class="card-body">
           <h5 class="card-title mb-3">College</h5>
           <h6 class="card-subtitle mb-2 text-muted">IPI Akademija</h6>
+          <img src="assets/ipi.png" class="py-2" style="width: 70px;">
           <p class="card-text">IT</p>
           <h4>What I learned</h4>
 
@@ -65,9 +82,10 @@
     <div class="col-md-6">
       <h3 class="text-center mb-4">Certifications & Courses</h3>
       <!-- Certification 1 -->
-      <div class="card mb-4 shadow">
+      <div class="card mb-4 shadow" *ngIf="currentFilter ==='frontend' || currentFilter===''">
         <div class="card-body">
-          <h5 class="card-title mb-3">Angular course by Maximilian Schwarzmüller</h5>
+          <img src="assets/angular.jpg" class="py-2" style="width: 60px;">
+          <h5 class="card-title mb-3"  >Angular course by Maximilian Schwarzmüller</h5>
           <h6 class="card-subtitle mb-2 text-muted"></h6>
           <p class="card-text">A complete guide to Angular</p>
           <p class="card-text">Throughout the course I built 1 fully made Angular app(website), and 24+ smaller websites.</p>
@@ -100,8 +118,9 @@
 
       </div>
       <!-- Certification 2 -->
-      <div class="card mb-4 shadow">
+      <div class="card mb-4 shadow" *ngIf="currentFilter ==='data' || currentFilter===''">
         <div class="card-body">
+          <img src="assets/data.png" class="py-2" style="width: 70px;">
           <h5 class="card-title mb-3">Data analysis course by 365 team</h5>
 
           <p class="card-text">A full deep dive into the world of data analysis.</p>
@@ -112,8 +131,9 @@
         </div>
       </div>
 
-      <div class="card mb-4 shadow">
+      <div class="card mb-4 shadow" *ngIf="currentFilter ==='salesforce' || currentFilter===''">
         <div class="card-body">
+          <img src="assets/ranger.jpg" class="py-2" style="width: 100px;">
           <h5 class="card-title mb-3">Trailhead ranger</h5>
 
           <p class="card-text">I learned the ins and outs of Salesforce</p>
@@ -123,8 +143,9 @@
         </div>
       </div>
 
-      <div class="card mb-4 shadow">
+      <div class="card mb-4 shadow" *ngIf="currentFilter ==='frontend' || currentFilter===''">
         <div class="card-body">
+          <img src="assets/github.png" class="py-2" style="width: 70px;">
           <h5 class="card-title mb-3">Git & Github course by Colt Steele</h5>
 
           <p class="card-text">An awesome course related to Git and GitHub.</p>
@@ -136,20 +157,24 @@
         </div>
       </div>
 
-      <div class="card mb-4 shadow">
+      <div class="card mb-4 shadow" *ngIf="currentFilter ==='salesforce' || currentFilter===''">
         <div class="card-body">
+          <img src="assets/salesforce.png" class="py-2" style="width: 70px;">
           <h5 class="card-title mb-3">Salesforce admin exam preperation course by David Massey</h5>
 
           <p class="card-text">David Massey is a lead solutions engineer @ salesoforce UK.</p>
             <p>Thorugh out the course I learned learning systems designed to boost your probability of passing the admin exam</p>
             <p>I had a goal in mind to prepare myself for the Salesforce exam</p>
+            <p class="card-text"> <a href="https://www.udemy.com/certificate/UC-40034dde-5b80-44c3-ad93-9ca5bbb62d50/" target="_blank">Certification verification</a></p>
         </div>
+
       </div>
 
 
       <h2>Working on</h2>
       <div class="card mb-4 shadow bg-light text-muted">
         <div class="card-body">
+          <img src="assets/node.png" class="py-2" style="width: 70px;">
           <h5 class="card-title mb-3">NodeJS</h5>
 
           <p class="card-text">Description</p>
